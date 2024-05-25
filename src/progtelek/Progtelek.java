@@ -14,7 +14,7 @@ public class Progtelek {
         megszamolas(5); //nagyobb, mint megadott paraméter
         eldontes(2); //megadott paraméter szerepel-e a tömbben
         kivalasztas(7); //megadott paraméter hol szerepel a tömbben
-        kereses(0);
+        kereses(0); //megadott paraméter hol szerepel a tömbben indexxel
         maxKivalasztas();
         minKivalasztas();
     }
@@ -59,7 +59,7 @@ public class Progtelek {
             i++;
         }
         if (i<tomb.length) {
-            return i+1;
+            return i;
         }else{ 
             return -1;
         }
