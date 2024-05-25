@@ -19,6 +19,15 @@ public class Progtelek {
         minKivalasztas();
         konzolraIr();
     }
+    
+    private static void konzolraIr() {
+        System.out.println("Programozási tételek:");
+        String tombSzoveg = "";
+        for (int elem : tomb) {
+            tombSzoveg += "%d ".formatted(elem);
+        }
+        System.out.print("A tömb elemei: [ " + tombSzoveg + "]\n");
+    }
 
     public static int osszegzes() {
         int sum = 0;
@@ -84,10 +93,6 @@ public class Progtelek {
             }
         }        
         return min;
-    }
-
-    private static void konzolraIr() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
