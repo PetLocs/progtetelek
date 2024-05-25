@@ -12,7 +12,7 @@ public class Progtelek {
     private static void progtetelek() {
         osszegzes();
         megszamolas(5); //nagyobb, mint megadott paraméter
-        eldontes();
+        eldontes(2); //megadott paraméter szerepel-e a tömbben
         kivalasztas();
         kereses();
         maxKivalasztas();
@@ -37,8 +37,12 @@ public class Progtelek {
         return db;
     }
 
-    private static void eldontes() {
-        
+    private static boolean eldontes(int ertek) {
+        int i = 0;
+        while (i<tomb.length && tomb[i] != ertek) {
+            i++;
+        }
+        return i<tomb.length;
     }
 
     private static void kivalasztas() {
