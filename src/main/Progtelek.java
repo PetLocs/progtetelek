@@ -3,7 +3,7 @@ package main;
 
 public class Progtelek {
 
-    static int[] tomb = new int[]{2, -4, 7, 11, 0};
+    public static int[] tomb = new int[]{2, -4, 7, 11, 0};
     
     public static void main(String[] args) {
         progtetelek();
