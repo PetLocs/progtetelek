@@ -65,8 +65,14 @@ public class Progtelek {
         }
     }
 
-    private static void maxKivalasztas() {
-        
+    private static int maxKivalasztas() {
+        int max = tomb[0];
+        for (int szam : tomb) {
+            if (szam > max) {
+                max = szam;
+            }
+        }        
+        return max;
     }
 
     private static void minKivalasztas() {
