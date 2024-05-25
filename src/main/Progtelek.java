@@ -1,5 +1,5 @@
 
-package progtelek;
+package main;
 
 public class Progtelek {
 
