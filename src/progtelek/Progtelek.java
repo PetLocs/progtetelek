@@ -11,7 +11,7 @@ public class Progtelek {
 
     private static void progtetelek() {
         osszegzes();
-        megszamolas();
+        megszamolas(5); //nagyobb, mint megadott paraméter
         eldontes();
         kivalasztas();
         kereses();
@@ -27,8 +27,14 @@ public class Progtelek {
         return sum;
     }
 
-    private static void megszamolas() {
-        
+    private static int megszamolas(int ertek) {
+        int db = 0;
+        for (int szam : tomb) {
+            if (szam > ertek) {
+                db++;
+            }
+        }
+        return db;
     }
 
     private static void eldontes() {
