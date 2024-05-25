@@ -9,7 +9,7 @@ public class Progtelek_teszt {
         progtelekTesztelese();
     }
 
-    private static void progtelekTesztelese() {
+    private static void progtelekTesztelese() {        
         Progtelek.osszegzes();
         Progtelek.megszamolas(0);
         Progtelek.eldontes(0);

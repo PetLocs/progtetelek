@@ -17,6 +17,7 @@ public class Progtelek {
         kereses(0); //megadott paraméter hol szerepel a tömbben indexxel
         maxKivalasztas();
         minKivalasztas();
+        konzolraIr();
     }
 
     public static int osszegzes() {
@@ -83,6 +84,10 @@ public class Progtelek {
             }
         }        
         return min;
+    }
+
+    private static void konzolraIr() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
