@@ -19,7 +19,7 @@ public class Progtelek {
         minKivalasztas();
     }
 
-    private static int osszegzes() {
+    public static int osszegzes() {
         int sum = 0;
         for (int szam : tomb) {
             sum += szam;
@@ -27,7 +27,7 @@ public class Progtelek {
         return sum;
     }
 
-    private static int megszamolas(int ertek) {
+    public static int megszamolas(int ertek) {
         int db = 0;
         for (int szam : tomb) {
             if (szam > ertek) {
@@ -37,7 +37,7 @@ public class Progtelek {
         return db;
     }
 
-    private static boolean eldontes(int ertek) {
+    public static boolean eldontes(int ertek) {
         int i = 0;
         while (i<tomb.length && tomb[i] != ertek) {
             i++;
@@ -45,7 +45,7 @@ public class Progtelek {
         return i<tomb.length;
     }
 
-    private static int kivalasztas(int ertek) {
+    public static int kivalasztas(int ertek) {
         int i = 0;
         while (tomb[i] != ertek) {
             i++;
@@ -53,7 +53,7 @@ public class Progtelek {
         return i+1;
     }
 
-    private static int kereses(int ertek) {
+    public static int kereses(int ertek) {
         int i = 0;
         while (i<tomb.length && tomb[i] != ertek) {
             i++;
@@ -65,7 +65,7 @@ public class Progtelek {
         }
     }
 
-    private static int maxKivalasztas() {
+    public static int maxKivalasztas() {
         int max = tomb[0];
         for (int szam : tomb) {
             if (szam > max) {
@@ -75,7 +75,7 @@ public class Progtelek {
         return max;
     }
 
-    private static int minKivalasztas() {
+    public static int minKivalasztas() {
         int min = tomb[0];
         for (int szam : tomb) {
             if (szam > min) {
