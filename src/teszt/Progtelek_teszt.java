@@ -7,5 +7,11 @@ public class Progtelek_teszt {
     
     public static void main(String[] args) {
         Progtelek.osszegzes();
+        Progtelek.megszamolas(0);
+        Progtelek.eldontes(0);
+        Progtelek.kivalasztas(0);
+        Progtelek.kereses(0);
+        Progtelek.maxKivalasztas();
+        Progtelek.minKivalasztas();
     }
 }
