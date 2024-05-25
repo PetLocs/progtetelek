@@ -19,8 +19,12 @@ public class Progtelek {
         minKivalasztas();
     }
 
-    private static void osszegzes() {
-        
+    private static int osszegzes() {
+        int sum = 0;
+        for (int szam : tomb) {
+            sum += szam;
+        }
+        return sum;
     }
 
     private static void megszamolas() {
