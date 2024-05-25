@@ -13,7 +13,7 @@ public class Progtelek {
         osszegzes();
         megszamolas(5); //nagyobb, mint megadott paraméter
         eldontes(2); //megadott paraméter szerepel-e a tömbben
-        kivalasztas();
+        kivalasztas(7); //megadott paraméter hol szerepel a tömbben
         kereses();
         maxKivalasztas();
         minKivalasztas();
@@ -45,8 +45,12 @@ public class Progtelek {
         return i<tomb.length;
     }
 
-    private static void kivalasztas() {
-        
+    private static int kivalasztas(int ertek) {
+        int i = 0;
+        while (tomb[i] != ertek) {
+            i++;
+        }
+        return i+1;
     }
 
     private static void kereses() {
