@@ -75,8 +75,14 @@ public class Progtelek {
         return max;
     }
 
-    private static void minKivalasztas() {
-        
+    private static int minKivalasztas() {
+        int min = tomb[0];
+        for (int szam : tomb) {
+            if (szam > min) {
+                min = szam;
+            }
+        }        
+        return min;
     }
     
 }
